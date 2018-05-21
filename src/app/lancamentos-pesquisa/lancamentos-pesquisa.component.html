@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="ui-g">
+
+    <div class="ui-g-12">
+      <h1>Lancamentos</h1>
+    </div>
+
+
+    <div class="ui-g-12 ui-fluid">
+      <label>Descrição</label>
+      <input type="text" pInputText appCampoColorido #test="campoColorido"/>
+    </div>
+
+    <div class="ui-g-12 ui-fluid">
+      <label>Vencimento</label>
+      <input type="text" pInputText />
+      <label>até</label>
+      <input type="text" pInputText />
+    </div>
+    <div class="ui-g-12">
+      <button pButton type="submit" label="Pesquisar" (click)="test.aoGanharFoco()"></button>
+    </div>
+   <app-lancamento-grid [lancamentos]="lancamentos"></app-lancamento-grid>
+  </div>
+</div>
